@@ -40,7 +40,7 @@ function displayAnswer() {
     }
     var op = document.getElementById("operation").value;
 
-    //this takes only numbers from number1 and number2
+    //check and validate operation type
     switch(op) {
         case "+":
             z = addition(x,y);
@@ -62,7 +62,5 @@ function displayAnswer() {
             return;
             
     }	
-
-    document.getElementById("answer").innerHTML=z;
-
+    document.getElementById("answer").value=z;
 }
