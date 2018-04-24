@@ -21,9 +21,23 @@ function squareRoot(x,y) {
 //this function get x and y and run operation functions and display it in the brower.
 function displayAnswer() {
 
-    var z;
-    var x = Number(document.getElementById("number1").value);
-    var y = Number(document.getElementById("number2").value);
+    var z; 
+    //validation check. user only can enter number.
+    var no1 = document.getElementById("number1").value;
+    var validation = /^[0-9]+[.]?[0-9]*$/g;
+    if (no1.match(validation)) {
+        var x = no1.match(validation);
+    } else {
+        alert("Please enter number only");
+        return;
+    }
+    var no2 = document.getElementById("number2").value;
+    if (no2.match(validation)) {
+        var y = no2.match(validation);
+    } else {
+        alert("Please enter number only");
+        return;
+    }
     var op = document.getElementById("operation").value;
 
     //this takes only numbers from number1 and number2
@@ -45,8 +59,10 @@ function displayAnswer() {
             break;
         default: 
             alert("Please enter right operation! (+,-,*,/ or ^)");
+            return;
+            
     }	
 
-    document.getElementById("answer").innerHTML= z;
+    document.getElementById("answer").innerHTML=z;
 
 }
