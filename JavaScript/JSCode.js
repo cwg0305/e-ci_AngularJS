@@ -18,28 +18,27 @@ function division(x,y) {
 function squareRoot(x,y) {
     return Math.pow(x,y);
 }
+//validate input. User only can enter numbers. If user enter others it will alert.
+function validate(x) {
+    var input = x;
+    var validation = /^[0-9]+[.]?[0-9]*$/g;
+    if (!input.match(validation)) {
+        alert("Please enter number");
+        exit();
+    } else {
+        return Number (input);
+    }
+}
 //this function get x and y and run operation functions and display it in the brower.
 function displayAnswer() {
 
     var z; 
-    //validation check. user only can enter number.
-    var no1 = document.getElementById("number1").value;
-    var validation = /^[0-9]+[.]?[0-9]*$/g;
-    if (no1.match(validation)) {
-        var x = no1.match(validation);
-    } else {
-        alert("Please enter number only");
-        return;
-    }
-    var no2 = document.getElementById("number2").value;
-    if (no2.match(validation)) {
-        var y = no2.match(validation);
-    } else {
-        alert("Please enter number only");
-        return;
-    }
     var op = document.getElementById("operation").value;
-
+    //validation check. user only can enter numbers.
+    var input1 = document.getElementById("number1").value;
+    var x = validate(input1);
+    var input2 = document.getElementById("number2").value;
+    var y = validate(input2);
     //check and validate operation type
     switch(op) {
         case "+":
