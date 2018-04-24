@@ -1,2 +1,117 @@
 JavaScript Note.
+JS must be located in Header or Body.
+Placing scripts in external files has some advantages:
+	It separates HTML and code
+	It makes HTML and JavaScript easier to read and maintain
+	Cached JavaScript files can speed up page loads
+	<script src="myScript1.js"></script>
+
+JavaScript uses the var keyword to declare variables. It can hold number and text.
+	var person = "John Doe", carName = "Volvo", price = 200;
+
+  ** If you put a number in quotes, the rest of the numbers will be treated as strings, 	and concatenated.
+	
+	var x = 2 + 3 + "5"; ====> 55. When adding a number and a string, JavaScript will 					treat the number as a string.
+
+
+
+JavaScript uses arithmetic operators ( + - *  / ) to compute values:
+	(6+5)/2
+
+Comment => // or /* */
+
+JavaScript Arrays. Array indexes are zero-based. Array is object.
+	var cars = ["Saab", "Volvo", "BMW"];
+
+JavaScript Objects
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+The typeof Operator - find the type of JS variable.
+
+JavaScript Functions
+	function myFunction(p1, p2) {
+    		return p1 * p2; }
+
+Functions Scop
+	Local scope - declared within a JS function. This only be accessed within the function
+
+	Global Scope - declared outside a function. All scripts and functions on a page can access it. If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable even the value is inside a function.
+
+HTML Events
+	<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+	<p id="demo"></p>
+	or,
+	<button onclick="this.innerHTML=Date()">The time is?</button>
+
+JavaScript String Special Characters //
+	var x = "We are the so-called \"Vikings\" from the north.";
+
+String Length
+	var sln = txt.length;
+
+JavaScript Numbers - this has only one type of number.
+	- Extra large or extra small numbers can be written with scientific (exponent) notation:
+	- NaN - Not a Number
+	- Numeric Strings - JS will try to convert String to numbers in all numeric operations
+	- Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+	- JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+	- toString() returns a number as a string.
+	- toExponential() returns a string, with a number rounded and written using exponential notation.
+	- toFixed() returns a string, with the number written with a specified number of decimals:
+	- toPrecision() returns a string, with a number written with a specified length:
+	- Number() can be used to convert JavaScript variables to numbers:
+	- parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+	- parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+	- Math.round(x) returns the value of x rounded to its nearest integer:
+	- Math.pow(x, y) returns the value of x to the power of y:
+	- Math.sqrt(x) returns the square root of x:
+	- Math.abs(x) returns the absolute (positive) value of x:
+	- Math.ceil(x) returns the value of x rounded up to its nearest integer:
+	- Math.floor(x) returns the value of x rounded down to its nearest integer:
+	- Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians).
+	- Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+	- Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
+
+If Statement
+	if (condition1) {
+    		block of code to be executed if condition1 is true
+	} else if (condition2) {
+   		block of code to be executed if the condition1 is false and condition2 is true
+	} else {
+    		block of code to be executed if the condition1 is false and condition2 is false
+	}
+
+Switch Statement
+	switch(expression) {
+    		case n:
+        		code block
+        	break;
+    		case n:
+        		code block
+        	break;
+    		default:
+        		code block
+		}	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 
