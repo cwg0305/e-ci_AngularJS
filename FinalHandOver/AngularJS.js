@@ -1,8 +1,9 @@
 var app = angular.module('Calculator', []);
 var answer;
 app.controller('validCtrl', ['$scope', function($scope) {
+    // this regular expression for number pattern. 
     $scope.numberPattern = '^[0-9]+[.]?[0-9]*$';
-    $scope.opPattern = '+,-,*,/,^$';
+    // if number pattern or operaiton input are not correct, this will set answer to warn user
     $scope.error = function() { 
         answer =  "Please check inputs again";
     }
@@ -27,7 +28,6 @@ app.controller('calCtrl', function($scope) {
     }
 
 });
-
 app.controller('anwCtrl', function ($scope) {
  $scope.displayAnswer = function () {
         $scope.answer = answer;

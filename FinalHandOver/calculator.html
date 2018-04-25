@@ -1,3 +1,10 @@
+<!-- 
+    * E-ci Angular JS Assignment.
+    * Developing a Calculator
+    * @iteration 1
+    * @author: Won Geun CHOI <cwg0305@hotmail.com>
+ --> 
+
 <!DOCTYPE html>
 <html ng-app="Calculator" lang="en">
 <head>
@@ -17,18 +24,21 @@
             <h4> Please Enter a number </h4>
             <input id="number1" name="number1" type="text"  required ng-pattern="numberPattern" ng-model="number1">   
             <br>   
+            <!-- this conditions check number pattern and empty  -->
             <span ng-if="form1.number1.$error.pattern">{{error()}}</span>
             <span ng-if="form1.number1.$error.required">{{error()}}</span>
             <br>
         <h4> Please Enter an operation </h4>
             <input id="operation" name="operation" type="text" required ng-pattern="opPattern" ng-model="operation">
             <br>   
+           <!-- this conditions check operation input and empty  -->
             <span ng-if="form1.operation.$error.pattern">{{error()}}</span>
             <span ng-if="form1.operation.$error.required">{{error()}}</span>
         <br>
             <h4> Please Enter a number </h4>
             <input id="number2" name="number2" type="text" required ng-pattern="numberPattern" ng-model="number2">      
             <br>   
+          <!-- this conditions check number pattern and empty  -->
             <span ng-if="form1.number2.$error.pattern">{{error()}}</span>
             <span ng-if="form1.number2.$error.required">{{error()}}</span>
 
