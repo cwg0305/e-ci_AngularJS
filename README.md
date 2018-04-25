@@ -20,3 +20,11 @@ Details
 - Optional options: ^ (Square by N), Square Root
 - Numbers can be any defined by: ^[0-9]+[.]?[0-9]*$;
 - No thousand separators (,) is required in the output.
+
+
+My final work of the assignment is in FinalHandover folder. Please check this.
+
+Javascript and AngularJS forders include some notes and test files.
+
+This was my first time I studied and used Javascript and AngularJS
+
