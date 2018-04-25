@@ -61,5 +61,5 @@ function displayAnswer() {
             return;
             
     }	
-    document.getElementById("answer").value=z;
+    document.getElementById("answer").innerHTML=z;
 }
