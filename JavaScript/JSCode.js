@@ -23,7 +23,7 @@ function validate(x) {
     var input = x;
     var validation = /^[0-9]+[.]?[0-9]*$/g;
     if (!input.match(validation)) {
-        alert("Please enter a number");
+        alert("Please enter number");
         exit();
     } else {
         return Number (input);
@@ -57,7 +57,7 @@ function displayAnswer() {
             z = squareRoot(x,y);
             break;
         default: 
-            alert("Please enter a right operation! (+,-,*,/ or ^)");
+            alert("Please enter right operation! (+,-,*,/ or ^)");
             return;
             
     }	
