@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+}
+
+body .class {
+    /* background-color: yellow; */
+    text-align: center;
+
+}
+
+h3 {
+    color: navy;
+}

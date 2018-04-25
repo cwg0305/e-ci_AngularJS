@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="Calculator" lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="AngularJS.js"></script>
+
+</head>
+<body>
+  <div class = "class" >
+    <h1>E-CI AngularJS Assignment</h3>
+    <h2>Creator: Won Geun CHOI</h2>
+    <h3>AngularJS - Calculator</h3>
+    <div ng-controller="validCtrl">
+        <form name="form1">
+            <h4> Please Enter a number </h4>
+            <input id="number1" name="number1" type="text"  required ng-pattern="numberPattern" ng-model="number1">   
+            <br>   
+            <span ng-if="form1.number1.$error.pattern">{{error()}}</span>
+            <span ng-if="form1.number1.$error.required">{{error()}}</span>
+            <br>
+        <h4> Please Enter an operation </h4>
+            <input id="operation" name="operation" type="text" required ng-pattern="opPattern" ng-model="operation">
+            <br>   
+            <span ng-if="form1.operation.$error.pattern">{{error()}}</span>
+            <span ng-if="form1.operation.$error.required">{{error()}}</span>
+        <br>
+            <h4> Please Enter a number </h4>
+            <input id="number2" name="number2" type="text" required ng-pattern="numberPattern" ng-model="number2">      
+            <br>   
+            <span ng-if="form1.number2.$error.pattern">{{error()}}</span>
+            <span ng-if="form1.number2.$error.required">{{error()}}</span>
+
+            <br>
+         
+    <h4> Display the answer</h4>
+    <div ng-controller="calCtrl" ng-switch="operation">
+        <div ng-switch-when="+">{{addition()}}</div>
+        <div ng-switch-when="-">{{subtraction()}}</div>
+        <div ng-switch-when="*">{{multiplication()}}</div>
+        <div ng-switch-when="/">{{division()}}</div>
+        <div ng-switch-when="^">{{squareRoot()}}</div>
+        <div ng-switch-default>{{error()}}</div>
+ 
+    <div ng-controller="anwCtrl">
+        <input type="button" value="displayAnswer" ng-click="displayAnswer()" />
+    </div>
+
+  </form>
+  </div>
+</div>
+</div>
+
+
+     
+    <br>
+ 
+
+
+</body>
+</html>
