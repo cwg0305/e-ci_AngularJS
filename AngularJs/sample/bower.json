@@ -1,0 +1,21 @@
+{
+  "name": "sampleApp",
+  "homepage": "https://github.com/cwg0305/e-ci_AngularJS",
+  "authors": [
+    "Won CHOI <cwg0305@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "angular": "^1.6.10"
+  }
+}
