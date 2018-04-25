@@ -1,0 +1,42 @@
+AngularJs Note
+
+AngularJS - AJS.
+
+AJS - 2way binding = view and data
+
+The ng-app directive defines an AngularJS application.
+
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.
+
+The ng-bind directive binds application data to the HTML view.
+
+The ng-init directive initializes AngularJS application variables.
+
+AngularJS expressions are written inside double braces: {{ expression }}.
+AngularJS expressions bind AngularJS data to HTML the same way as the ng-bind directive.
+	  <p>My first expression: {{ 5 + 5 }}</p>
+
+AngularJS modules define AngularJS applications.
+
+AngularJS controllers control AngularJS applications.
+
+The ng-app directive defines the application, the ng-controller directive defines the controller.
+
+AngularJS numbers are like JavaScript numbers:
+
+AngularJS strings are like JavaScript strings:
+
+AngularJS objects are like JavaScript objects:
+	<div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+
+AngularJS arrays are like JavaScript arrays:
+	<div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+The ng-repeat directive repeats an HTML element:
+
+
+
+	
+
+
+
