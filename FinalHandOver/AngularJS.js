@@ -28,9 +28,9 @@ app.controller('calCtrl', function($scope) {
 
 });
 
-app.controller('anwCtrl', function ($scope, $window) {
+app.controller('anwCtrl', function ($scope) {
  $scope.displayAnswer = function () {
-        $window.alert(answer);
+        $scope.answer = answer;
     }
 });
 

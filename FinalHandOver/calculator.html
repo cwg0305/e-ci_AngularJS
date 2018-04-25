@@ -12,7 +12,7 @@
     <h1>E-CI AngularJS Assignment</h3>
     <h2>Creator: Won Geun CHOI</h2>
     <h3>AngularJS - Calculator</h3>
-    <div ng-controller="validCtrl">
+    <div ng-controller="validCtrl" >
         <form name="form1">
             <h4> Please Enter a number </h4>
             <input id="number1" name="number1" type="text"  required ng-pattern="numberPattern" ng-model="number1">   
@@ -44,7 +44,9 @@
         <div ng-switch-default>{{error()}}</div>
  
     <div ng-controller="anwCtrl">
-        <input type="button" value="displayAnswer" ng-click="displayAnswer()" />
+        <input type="button" value="displayAnswer" ng-click="displayAnswer()" ng-modle="answer"/>
+        <h3>{{answer}}</h3>
+
     </div>
 
   </form>
